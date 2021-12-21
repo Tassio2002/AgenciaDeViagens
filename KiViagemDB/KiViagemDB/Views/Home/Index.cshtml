@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main class="banner py-5" id="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-xl-7">
+                <div class="block text-white" id="main-text">
+                    <div class="divider mb-3"></div>
+                    <span class="text-uppercase text-sm letter-spacing">As melhores opções para você</span>
+                    <h1 class="mb-3 mt-3" id="text-principal">Seja bem vindo ao seu sonho</h1>
+
+                    <p class="mb-4 pr-5">Conosco voce planeja toda a sua viajem, desde a arrumação das malas até chegada no seu destino.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="container" id="features">
+
+    <h1 class="text-center my-5">NOSSOS SERVIÇOS</h1>
+
+    <div class="d-flex flex-row justify-content-center my-5" id="cards-container">
+
+        <div class="card mr-5" id="card">
+            <div id="img-1"></div>
+            <div class="card-block p-3 my-4" id="card-text">
+                <h4 class="card-title font-weight-bold">Passagens</h4>
+                <p class="card-text">Encontre as melhores passagens aereas, com os melhores preços.</p>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Promos">Veja aqui!</a>
+            </div>
+        </div>
+
+        <div class="card mr-5" id="card">
+            <div id="img-2"></div>
+            <div class="card-block p-3 my-4" id="card-text">
+                <h4 class="card-title font-weight-bold">Promoções Imperdiveis</h4>
+                <p class="card-text">Temos promoções semanais, aqui voce sempre viaja com desconto.</p>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Promos">Veja aqui!</a>
+            </div>
+        </div>
+
+        <div class="card" id="card">
+            <div id="img-3"></div>
+            <div class="card-block p-3 my-4" id="card-text">
+                <h4 class="card-title font-weight-bold">Viagens internacionais</h4>
+                <p class="card-text">Realize seu sonho de viajar para fora do país e conhecer novos ares.</p>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Destinos">Veja aqui!</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="call-to-action overly bg-3 section-sm py-5" id="call">
+
+    <div class="container">
+        <div class="row justify-content-md-center text-center">
+            <div class="col-md-8">
+                <div class="content-holder">
+                    <h1 class="py-3" id="call-title">
+                        Foque somente em viajar o mundo, o resto deixe com a gente!
+                    </h1>
+                    <ul class="list-inline mt-30">
+                        <li class="list-inline-item"><a class="btn btn-lg btn-primary" asp-area="" asp-controller="Home" asp-action="Destinos">Destinos</a></li>
+                        <li class="list-inline-item"><a class="btn btn-lg btn-outline-danger" asp-area="" asp-controller="Home" asp-action="Promo">Promos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

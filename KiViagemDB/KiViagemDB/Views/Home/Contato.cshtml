@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Contato";
+}
+
+<div id="contact-img" class="d-flex justify-content-center align-items-center">
+
+    <div class="w-100 bg-white" id="contact-form">
+        <h1 class="text-center font-weight-bolder" id="form-title">Contate-nos</h1>
+        <p class="mb-4 pl-1" id="form-p">Diga-nos exatamente o que está procurando e nós vamos encontrar a melhor opção.</p>
+
+        <form class="d-flex flex-column text-uppercase">
+
+            <label for="name">Nome</label>
+            <input type="text" id="form-input" placeholder="meuEmail@exemplo.com">
+
+            <label for="email">Endereço de email</label>
+            <input id="form-input" placeholder="João da silva">
+
+            <div class="form-group">
+                <label for="qtdPessoas">Quantidade de pessoas na viagem</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>5+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="local">Tipo de viagem</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Nacional</option>
+                    <option>Internacional</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Digite o que deseja</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
